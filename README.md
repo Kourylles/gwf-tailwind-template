@@ -1,35 +1,23 @@
-# gwf-vite-tailwind-template
+# Vue 3 + Vite + Vue-Router 4 + Pinia + TailWind CSS
 
-This template should help get you started developing with Vue 3 in Vite.
+Ce template devrait vous aider à commencer à développer des projets Vue3 avec Vite. Le template utilise Vue3 `<script setup>` SFCs, consultez [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) pour en savoir plus.
 
-## Recommended IDE Setup
+## Configuration recommandée pour l'IDE
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-## Customize configuration
+# Utilisation du template
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+### Récupérer le template
 
-## Project Setup
+> Cela va créer un dossier "nom-du-ptojet"\*
 
-```sh
-npm install
-```
+`npx degit Kourylles/GWF-Vite-template [nom-du-projet]`
 
-### Compile and Hot-Reload for Development
+### Installer les dépendances
 
-```sh
-npm run dev
-```
+`yarn`
 
-### Compile and Minify for Production
+### Lancer le serveur de développement
 
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+`yarn dev`
