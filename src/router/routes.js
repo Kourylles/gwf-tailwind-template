@@ -2,7 +2,7 @@
  *              IMPORTS                 *
  * **************************************/
 //COMPONENTS
-import HomeView from '../views/HomeView.vue'
+import AccueilView from '@/views/AccueilView.vue'
 
 /****************************************
  *              LISTE                   *
@@ -10,12 +10,5 @@ import HomeView from '../views/HomeView.vue'
  *             ROUTES                   *
  * **************************************/
 
-const routes = [
-	{ path: '/', name: 'home', component: HomeView },
-	{
-		path: '/about',
-		name: 'about',
-		component: () => import('../views/AboutView.vue'),
-	}
-]
+const routes = [{ path: "/", name: "accueil", component: AccueilView }];
 export default routes;

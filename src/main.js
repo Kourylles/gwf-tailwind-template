@@ -1,14 +1,31 @@
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+/****************************************
+ *              IMPORTS                 *
+ * **************************************/
+//VUE3
+import { createApp } from "vue";
+//APPLICATION
+import App from "./App.vue";
+//VUE-ROUTER
+import router from "@/router";
+//PINIA
+import { createPinia } from "pinia";
+//CSS
+import "./assets/main.css";
 
-import App from './App.vue'
-import router from './router'
+/****************************************
+ *              CREATION                *
+ *                DE                    *
+ *          L'APPLICATION               *
+ * **************************************/
+const app = createApp(App);
 
-import './assets/main.css'
-
-const app = createApp(App)
-
-app.use(createPinia())
-app.use(router)
-
-app.mount('#app')
+/****************************************
+ *              MONTAGE                *
+ *                DE                    *
+ *          L'APPLICATION               *
+ * **************************************/
+// eslint-disable-next-line prettier/prettier
+app
+  .use(router)
+  .use(createPinia())
+  .mount("#app");
